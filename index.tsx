@@ -17,31 +17,6 @@ function postToParent(level: string, ...args: any[]): void {
   }
 }
 
-// Global error handler
-window.onerror = function (message, source, lineno, colno, error) {
-  const errPayload = {
-    message,
-    source,
-    lineno,
-    colno,
-    stack: error?.stack,
-  };
-  postToParent('error', '[Meku_Error_Caught]', errPayload);
-};
-
-// Unhandled promise rejection
-window.onunhandledrejection = function (event) {
-  postToParent('error', '[Meku_Error_Caught]', { reason: event.reason });
-};
-
-// Patch console
-(['log', 'warn', 'info', 'error'] as const).forEach((level) => {
-  const original = console[level];
-  console[level] = (...args: any[]) => {
-    postToParent(level, ...args);
-    original(...args);
-  };
-});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
