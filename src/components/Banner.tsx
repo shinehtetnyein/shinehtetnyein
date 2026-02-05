@@ -55,7 +55,7 @@ const Banner = () => {
             className="flex justify-center space-x-6 mb-8"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/shinehtetnyein"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
@@ -64,7 +64,7 @@ const Banner = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/shine-htetnyein-2b74b7238/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
