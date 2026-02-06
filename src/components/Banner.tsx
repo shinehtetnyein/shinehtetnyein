@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
-import profileImage from "../../public/img/profile_image.jpg";
+import profile_image from '../assets/profile_image.jpg';
 const Banner = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted">
@@ -15,7 +15,7 @@ const Banner = () => {
           >
             <div>
               <img
-              src={profileImage}
+              src={profile_image}
               alt="Professional headshot of Shine Htet Nyein"
               className="w-52 h-52 rounded-2xl mx-auto mb-6 border-4 border-primary/20"
             />

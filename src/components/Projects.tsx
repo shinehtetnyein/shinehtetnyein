@@ -203,16 +203,7 @@ const Projects = () => {
                     className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                   >
                     <ExternalLink size={16} className="mr-2" />
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 border border-border text-foreground rounded-md hover:bg-muted transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
+                    View Details
                   </a>
                 </div>
               </div>
