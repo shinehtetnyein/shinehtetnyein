@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { toast } from 'react-toastify';
+import emailjs from 'emailjs-com';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -14,6 +15,10 @@ const contactSchema = z.object({
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
+
+const SERVICE_ID = 'service_lw3z6st';
+const TEMPLATE_ID = 'template_biara5i';
+const USER_ID = 'AxXacYexN3iEwZ-2h'; // Updated with the correct EmailJS public key
 
 const Contact = () => {
   const {
@@ -27,12 +32,20 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', data);
-      toast.success('Message sent successfully! I\'ll get back to you soon.');
+      const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        to_name: 'Shine',
+        from_name: data.name,
+        email_id: data.email,
+        subject: data.subject,
+        message: data.message,
+      }, USER_ID);
+
+      console.log(result)
+      toast.success("Message sent successfully! I'll get back to you soon.");
       reset();
+      return result;
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast.error('Failed to send message. Please try again.');
     }
   };

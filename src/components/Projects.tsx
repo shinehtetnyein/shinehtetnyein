@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
-
+import PlanncoImage from "../assets/plannco.png"
+import MovieImage from "../assets/movie.png"
 const Projects = () => {
   const projects = [
     {
-      title: "Retail Campaign Equipment Website (HTML & CSS)",
+      title: "Plannco Home Decoration",
       description: "Designed a responsive and user-friendly retail campaign equipment website using semantic HTML and modern CSS best practices, with interactive components and mobile-first design.",
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+      image: PlanncoImage,
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveUrl: "#",
+      liveUrl: "https://shinehtetnyein.github.io/plannco/",
       githubUrl: "#",
       duration: "",
       teamSize: "",
@@ -18,8 +19,8 @@ const Projects = () => {
     {
       title: "Movies Project (React JS)",
       description: "Built a responsive React application with reusable functional components, state management using hooks, and integration with movie data APIs for search and filtering.",
-      image: "https://placehold.co/800x400",
-      technologies: ["React", "JavaScript", "REST API"],
+      image: MovieImage,
+      technologies: ["React", "Redux", "JavaScript", "REST API"],
       liveUrl: "#",
       githubUrl: "#",
       duration: "",
@@ -97,7 +98,7 @@ const Projects = () => {
       description: "Developed a cross-platform mobile app with React Native and integrated Android-specific features using Kotlin, including user authentication and activity tracking.",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=400&fit=crop",
       technologies: ["React Native", "Kotlin"],
-      liveUrl: "#",
+      liveUrl: "https://github.com/shinehtetnyein/m_hike",
       githubUrl: "#",
       duration: "",
       teamSize: "",
@@ -108,7 +109,7 @@ const Projects = () => {
       description: "Created wireframes and interactive prototypes with Axure, focusing on user-centered navigation flows, accessibility, and iterative UI improvements.",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
       technologies: ["Axure", "UI/UX"],
-      liveUrl: "#",
+      liveUrl: "https://ig7bih.axshare.com/?g=4",
       githubUrl: "#",
       duration: "",
       teamSize: "",
