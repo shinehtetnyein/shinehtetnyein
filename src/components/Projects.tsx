@@ -21,7 +21,7 @@ const Projects = () => {
       description: "Built a responsive React application with reusable functional components, state management using hooks, and integration with movie data APIs for search and filtering.",
       image: MovieImage,
       technologies: ["React", "Redux", "JavaScript", "REST API"],
-      liveUrl: "#",
+      liveUrl: "https://github.com/shinehtetnyein/movie_project",
       githubUrl: "#",
       duration: "",
       teamSize: "",
