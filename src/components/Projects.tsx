@@ -1,16 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
-import PlanncoImage from "../assets/plannco.png"
-import MovieImage from "../assets/movie.png"
+import { ExternalLink, Calendar, Users } from 'lucide-react';
+import PlanncoImage from "../assets/plannco.png";
+import MovieImage from "../assets/movie.png";
+import HospitalImage from "../assets/hospital.png";
 const Projects = () => {
   const projects = [
     {
       title: "Plannco Home Decoration",
-      description: "Designed a responsive and user-friendly retail campaign equipment website using semantic HTML and modern CSS best practices, with interactive components and mobile-first design.",
+      description: "Designed a responsive and user-friendly home decoration website using semantic HTML, modern CSS best practices, and JavaScript, implementing interactive features, dynamic UI elements, and a mobile-first responsive layout.",
       image: PlanncoImage,
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://shinehtetnyein.github.io/plannco/",
+      githubUrl: "#",
+      duration: "",
+      teamSize: "",
+      role: "Frontend Developer"
+    },
+    {
+      title: "Mention Hospital",
+      description: "Designed and developed a responsive hospital website using HTML, CSS, and JavaScript, featuring intuitive navigation, interactive components, and mobile-first design. ",
+      image: HospitalImage,
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://shinehtetnyein.github.io/hospital_pj/",
       githubUrl: "#",
       duration: "",
       teamSize: "",
