@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './src/pages/Home';
 import NotFound from './src/pages/NotFound';
+import WeDayDetails from './src/pages/WeDayDetails';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <main className="min-h-screen font-sans">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects/weday" element={<WeDayDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <ToastContainer

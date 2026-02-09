@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Calendar, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import PlanncoImage from "../assets/plannco.png";
 import MovieImage from "../assets/movie.png";
 import HospitalImage from "../assets/hospital.png";
@@ -46,6 +47,7 @@ const Projects = () => {
       technologies: ["React", "JavaScript"],
       liveUrl: "#",
       githubUrl: "#",
+      detailsUrl: "/projects/weday",
       duration: "",
       teamSize: "",
       role: "Frontend Developer"
@@ -55,7 +57,7 @@ const Projects = () => {
       description: "Implemented user authentication, product management, cart and checkout flows using Laravel MVC architecture and secure form validation, with admin order management.",
       image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&h=400&fit=crop",
       technologies: ["PHP", "Laravel", "MySQL"],
-      liveUrl: "#",
+      liveUrl: "https://github.com/shinehtetnyein/ecommerce_website",
       githubUrl: "#",
       duration: "",
       teamSize: "",
@@ -209,15 +211,25 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    View Details
-                  </a>
+                  {project.detailsUrl ? (
+                    <Link
+                      to={project.detailsUrl}
+                      className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      View Details
+                    </Link>
+                  ) : (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      View Details
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
