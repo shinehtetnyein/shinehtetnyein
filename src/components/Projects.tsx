@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import PlanncoImage from "../assets/plannco.png";
 import MovieImage from "../assets/movie.png";
 import HospitalImage from "../assets/hospital.png";
+import HotelImage from "../assets/hotel/hotel3.jpeg"
+import PosImage from "../assets/pos/img4.png";
 const Projects = () => {
   const projects = [
     {
@@ -53,23 +55,13 @@ const Projects = () => {
       role: "Frontend Developer"
     },
     {
-      title: "Ecommerce Website (PHP & Laravel)",
-      description: "Implemented user authentication, product management, cart and checkout flows using Laravel MVC architecture and secure form validation, with admin order management.",
-      image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&h=400&fit=crop",
-      technologies: ["PHP", "Laravel", "MySQL"],
-      liveUrl: "https://github.com/shinehtetnyein/ecommerce_website",
-      githubUrl: "#",
-      duration: "",
-      teamSize: "",
-      role: "Backend / Full Stack Developer"
-    },
-    {
       title: "Hotel Booking Management System (PHP & Laravel)",
       description: "Built booking logic with check-in/check-out validation, room availability management, and an admin dashboard for managing reservations using Laravel.",
-      image: "https://placehold.co/800x400",
+      image: HotelImage,
       technologies: ["PHP", "Laravel", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
+      detailsUrl: "/projects/hotel",
       duration: "",
       teamSize: "",
       role: "Backend Developer"
@@ -81,6 +73,7 @@ const Projects = () => {
       technologies: ["Vue.js", "Laravel", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
+      detailsUrl: "/projects/school",
       duration: "",
       teamSize: "",
       role: "Frontend / API Integration"
@@ -88,24 +81,14 @@ const Projects = () => {
     {
       title: "POS System (PHP)",
       description: "Implemented sales transaction and billing functionality with inventory and stock management and reporting features using PHP and MySQL.",
-      image: "https://placehold.co/800x400",
+      image: PosImage,
       technologies: ["PHP", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
+      detailsUrl: "/projects/pos",
       duration: "",
       teamSize: "",
       role: "Backend Developer"
-    },
-    {
-      title: "IT Product Sales & Service Database Management System (MySQL)",
-      description: "Designed normalized relational database schemas, wrote optimized SQL queries for reporting and ensured data integrity for product, customer, and service data.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=400&fit=crop",
-      technologies: ["MySQL", "SQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-      duration: "",
-      teamSize: "",
-      role: "Database Designer"
     },
     {
       title: "Hiking App (Kotlin & React Native)",
@@ -128,7 +111,7 @@ const Projects = () => {
       duration: "",
       teamSize: "",
       role: "UI/UX Designer"
-    }
+    },
   ];
 
   return (

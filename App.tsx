@@ -8,6 +8,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './src/pages/Home';
 import NotFound from './src/pages/NotFound';
 import WeDayDetails from './src/pages/WeDayDetails';
+import HotelDetails from './src/pages/HotelDetails';
+import SchoolDetails from './src/pages/SchoolDetails';
+import POSDetails from './src/pages/POSDetails';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +20,9 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/weday" element={<WeDayDetails />} />
+            <Route path="/projects/hotel" element={<HotelDetails />} />
+            <Route path="/projects/school" element={<SchoolDetails />} />
+            <Route path="/projects/pos" element={<POSDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <ToastContainer

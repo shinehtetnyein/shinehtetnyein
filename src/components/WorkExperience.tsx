@@ -71,7 +71,7 @@ const WorkExperience: React.FC = () => {
             </div>
           </motion.article>
 
-          {/* Junior React Developer */}
+          {/* React Developer */}
           <motion.article
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -85,7 +85,7 @@ const WorkExperience: React.FC = () => {
                   <Briefcase size={20} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-card-foreground">Junior React Developer</h3>
+                  <h3 className="text-xl font-semibold text-card-foreground">React Developer</h3>
                   <p className="text-sm text-muted-foreground">Myday Thukywal Co.Ltd • 2025 - 2026</p>
                 </div>
               </div>
