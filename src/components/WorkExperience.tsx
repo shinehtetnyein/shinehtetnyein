@@ -20,105 +20,45 @@ const WorkExperience: React.FC = () => {
         </motion.div>
 
         <div className="max-w-5xl mx-auto space-y-8">
-          {/* Computer Hardware Intern */}
-          <motion.article
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+
+          {/* Teaching & Guide */}
+          <motion.section
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
             className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
           >
-            <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <div className="flex items-center space-x-3">
-                <div className="p-2 bg-primary/10 text-primary rounded-md">
-                  <Briefcase size={20} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-card-foreground">Computer Hardware Intern</h3>
-                  <p className="text-sm text-muted-foreground">Laptop For You • 3 months (2023)</p>
-                </div>
+            <header className="flex items-center mb-4">
+              <div className="p-2 bg-primary/10 text-primary rounded-md mr-3">
+                <BookOpen size={20} />
               </div>
-
-              <div className="flex items-center mt-4 md:mt-0 text-muted-foreground">
-                <Calendar size={14} className="mr-2" />
-                <span className="text-sm">Internship — Hardware Support</span>
+              <div>
+                <h3 className="text-xl font-semibold text-card-foreground">Teaching & Guide</h3>
+                <p className="text-sm text-muted-foreground">2023 - Present</p>
               </div>
             </header>
 
             <div className="text-muted-foreground space-y-3">
+              <p className="mb-2">Practical, hands-on teaching and student mentoring across the following areas:</p>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Installed and configured operating systems, drivers, and application software.</span>
+                  <span>Computer Systems & IT Fundamentals</span>
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Troubleshot and repaired computer hardware components and peripheral devices.</span>
+                  <span>Office Software (Word, Excel, PowerPoint)</span>
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Assisted in assembling, upgrading, and maintaining laptop systems.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Identified and resolved common system performance and boot issues.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Supported end users with basic technical support and issue resolution.</span>
+                  <span>Web Development: HTML, CSS, JavaScript, Java and Python</span>
                 </li>
               </ul>
             </div>
-          </motion.article>
+          </motion.section>
 
-                    {/* Junior Graphic Designer */}
-          <motion.article
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
-          >
-            <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <div className="flex items-center space-x-3">
-                <div className="p-2 bg-primary/10 text-primary rounded-md">
-                  <Briefcase size={20} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-card-foreground">Junior Graphic Designer</h3>
-                  <p className="text-sm text-muted-foreground">Yangon Shwe Hpar See Convenience Store • 6 months (2023)</p>
-                </div>
-              </div>
-
-              <div className="flex items-center mt-4 md:mt-0 text-muted-foreground">
-                <Calendar size={14} className="mr-2" />
-                <span className="text-sm">Graphic Design</span>
-              </div>
-            </header>
-
-            <div className="text-muted-foreground space-y-3">
-              <ul className="list-none space-y-2">
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Created visually appealing designs for promotional materials, including flyers and banners.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Collaborated with the marketing team to develop branding strategies.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Utilized design software such as Adobe Photoshop and Illustrator to produce high-quality graphics.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Ensured consistency in design across all marketing channels.</span>
-                </li>
-              </ul>
-            </div>
-          </motion.article>
-
-          {/* React Developer */}
+                    {/* React Developer */}
           <motion.article
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -173,42 +113,111 @@ const WorkExperience: React.FC = () => {
             </div>
           </motion.article>
 
-          {/* Teaching & Guide */}
-          <motion.section
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+
+                    {/* Junior Graphic Designer */}
+          <motion.article
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
             className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
           >
-            <header className="flex items-center mb-4">
-              <div className="p-2 bg-primary/10 text-primary rounded-md mr-3">
-                <BookOpen size={20} />
+            <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div className="flex items-center space-x-3">
+                <div className="p-2 bg-primary/10 text-primary rounded-md">
+                  <Briefcase size={20} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-card-foreground">Junior Graphic Designer</h3>
+                  <p className="text-sm text-muted-foreground">Yangon Shwe Hpar See Convenience Store • 6 months (2023)</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-card-foreground">Teaching & Guide</h3>
-                <p className="text-sm text-muted-foreground">2023 - Present</p>
+
+              <div className="flex items-center mt-4 md:mt-0 text-muted-foreground">
+                <Calendar size={14} className="mr-2" />
+                <span className="text-sm">Graphic Design</span>
               </div>
             </header>
 
             <div className="text-muted-foreground space-y-3">
-              <p className="mb-2">Practical, hands-on teaching and student mentoring across the following areas:</p>
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Computer Systems & IT Fundamentals</span>
+                  <span>Created visually appealing designs for promotional materials, including flyers and banners.</span>
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Office Software (Word, Excel, PowerPoint)</span>
+                  <span>Collaborated with the marketing team to develop branding strategies.</span>
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Web Development: HTML, CSS, JavaScript, Java and Python</span>
+                  <span>Utilized design software such as Adobe Photoshop and Illustrator to produce high-quality graphics.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Ensured consistency in design across all marketing channels.</span>
                 </li>
               </ul>
             </div>
-          </motion.section>
+          </motion.article>
+
+          
+          {/* Computer Hardware Intern */}
+          <motion.article
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div className="flex items-center space-x-3">
+                <div className="p-2 bg-primary/10 text-primary rounded-md">
+                  <Briefcase size={20} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-card-foreground">Computer Hardware Intern</h3>
+                  <p className="text-sm text-muted-foreground">Laptop For You • 3 months (2023)</p>
+                </div>
+              </div>
+
+              <div className="flex items-center mt-4 md:mt-0 text-muted-foreground">
+                <Calendar size={14} className="mr-2" />
+                <span className="text-sm">Internship — Hardware Support</span>
+              </div>
+            </header>
+
+            <div className="text-muted-foreground space-y-3">
+              <ul className="list-none space-y-2">
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Installed and configured operating systems, drivers, and application software.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Troubleshot and repaired computer hardware components and peripheral devices.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Assisted in assembling, upgrading, and maintaining laptop systems.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Identified and resolved common system performance and boot issues.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Supported end users with basic technical support and issue resolution.</span>
+                </li>
+              </ul>
+            </div>
+          </motion.article>
+
+
+
+
+
+
         </div>
       </div>
     </section>
