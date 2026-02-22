@@ -6,14 +6,14 @@ const Education = () => {
   const educationData = [
     {
       degree: "Bachelor of Computing",
-      institution: "Greenwich University",
+      institution: "Greenwich University - UK",
       period: "2024 - 2025",
       description: "Focused on core areas of computing including software development, databases, web technologies, and system analysis.",
       gpa: ""
     },
     {
       degree: "NCC Level 4 & 5 Diploma in Computing",
-      institution: "MST College",
+      institution: "MST College - Myanmar",
       period: "2022 - 2024",
       description: "Completed foundation and advanced diploma studies covering programming fundamentals, computer systems, networking, and application development.",
       gpa: ""

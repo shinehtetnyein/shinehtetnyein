@@ -204,7 +204,7 @@ const WorkExperience: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Web Development: HTML, CSS, JavaScript, Java and Pythonhttps://www.youtube.com/shorts/mXULL5bwrNU</span>
+                  <span>Web Development: HTML, CSS, JavaScript, Java and Python</span>
                 </li>
               </ul>
             </div>
