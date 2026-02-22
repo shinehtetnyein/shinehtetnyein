@@ -4,13 +4,13 @@ import { Code, Users, Lightbulb, MessageCircle, Target, Clock } from 'lucide-rea
 
 const Skills = () => {
   const programmingLanguages = [
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'JavaScript', level: 95 },
-    { name: 'React', level: 95 },
-    { name: 'PHP', level: 85 },
-    { name: 'Laravel', level: 85 },
-    { name: 'Git & Github', level: 85 },
-    { name: 'SQL', level: 85 },
+    { name: 'HTML/CSS', level: 80 },
+    { name: 'JavaScript', level: 80 },
+    { name: 'React', level: 80 },
+    { name: 'PHP', level: 80 },
+    { name: 'Laravel', level: 80 },
+    { name: 'Git & Github', level: 80 },
+    { name: 'MySQL', level: 80 },
     { name: 'Node.js', level: 50 },
     { name: 'Python', level: 50 },
     { name: 'Java', level: 50 },

@@ -5,14 +5,14 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github size={20} />,
-      href: 'https://github.com',
+      href: 'https://github.com/shinehtetnyein',
       label: 'GitHub'
     },
-    {
-      icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com',
-      label: 'LinkedIn'
-    },
+    // {
+    //   icon: <Linkedin size={20} />,
+    //   href: 'https://linkedin.com',
+    //   label: 'LinkedIn'
+    // },
     {
       icon: <Mail size={20} />,
       href: 'mailto:shinehtetnyein05@gmail.com',
@@ -74,7 +74,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-primary-foreground/80">
-              <p>121, Minyekyawswar road, Ahlone, Yangon</p>
+              <p>121, Minyekyawswar road, Home Mission Compound, Ahlone, Yangon</p>
               <p>shinehtetnyein05@gmail.com</p>
               <p>09-978 868 561</p>
             </div>

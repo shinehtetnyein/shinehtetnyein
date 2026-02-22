@@ -66,7 +66,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: '121, Minyekyawswar road, Ahlone, Yangon',
+      value: '121, Minyekyawswar road, Home Mission Compound, Ahlone, Yangon',
       href: null
     }
   ];

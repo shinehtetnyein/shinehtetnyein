@@ -27,11 +27,8 @@ const Banner = () => {
               Web Developer
             </p>
 
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed">
-              I am a web developer with a strong passion for both front-end and back-end development,
-              specializing in PHP, Laravel, and MySQL. I have intermediate experience with JavaScript and React,
-              and I am familiar with version control using GitHub. I am eager to apply my skills in real-world projects,
-              collaborate with experienced developers, and contribute to building efficient and scalable web applications.
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 text-justify">
+              I am a web developer with a strong passion for both front-end and back-end development, specializing in PHP, Laravel, and MySQL. I also have intermediate experience with JavaScript and React. And then, I am familiar with the version control system, GitHub. I am eager to apply my skills in a real-world setting, collaborate with experienced developers, and contribute to building efficient and scalable web applications. I am eager to further enhance my expertise and gain hands-on experience in web development. I am actively seeking an opportunity to apply my skills in web development.
             </p>
 
             <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground mb-6">
@@ -62,15 +59,6 @@ const Banner = () => {
               aria-label="GitHub Profile"
             >
               <Github size={20} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/shine-htetnyein-2b74b7238/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-              aria-label="LinkedIn Profile"
-            >
-              <Linkedin size={20} />
             </a>
             <a
               href="mailto:shinehtetnyein05@gmail.com"
