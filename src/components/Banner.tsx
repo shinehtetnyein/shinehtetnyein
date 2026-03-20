@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, Banknote } from 'lucide-react';
 import profile_image from '../assets/profile_image.jpg';
 const Banner = () => {
   return (
@@ -15,10 +15,10 @@ const Banner = () => {
           >
             <div>
               <img
-              src={profile_image}
-              alt="Professional headshot of Shine Htet Nyein"
-              className="w-52 h-52 rounded-2xl mx-auto mb-6 border-4 border-primary/20"
-            />
+                src={profile_image}
+                alt="Professional headshot of Shine Htet Nyein"
+                className="w-52 h-52 rounded-2xl mx-auto mb-6 border-4 border-primary/20"
+              />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
               Sa Shine Htet Nyein
@@ -31,7 +31,7 @@ const Banner = () => {
               I am a web developer with a strong passion for both front-end and back-end development, specializing in PHP, Laravel, and MySQL. I also have intermediate experience with JavaScript and React. And then, I am familiar with the version control system, GitHub. I am eager to apply my skills in a real-world setting, collaborate with experienced developers, and contribute to building efficient and scalable web applications. I am eager to further enhance my expertise and gain hands-on experience in web development. I am actively seeking an opportunity to apply my skills in web development.
             </p>
 
-            <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground mb-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground mb-6">
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
                 <span>09-978 868 561</span>
@@ -41,6 +41,10 @@ const Banner = () => {
                 <a href="mailto:shinehtetnyein05@gmail.com" className="hover:text-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
                   shinehtetnyein05@gmail.com
                 </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Banknote size={16} />
+                <span>Expected Salary: 800,000 MMK</span>
               </div>
             </div>
           </motion.div>
