@@ -21,7 +21,7 @@ const Banner = () => {
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-              Sa Shine Htet Nyein
+              Shine Htet Nyein
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4">
               Web Developer
@@ -42,10 +42,10 @@ const Banner = () => {
                   shinehtetnyein05@gmail.com
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Banknote size={16} />
                 <span>Expected Salary: 800,000 MMK</span>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
