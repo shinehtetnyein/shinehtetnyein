@@ -21,7 +21,7 @@ const Banner = () => {
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-              Shine Htet Nyein
+              Sa Shine Htet Nyein
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4">
               Web Developer
