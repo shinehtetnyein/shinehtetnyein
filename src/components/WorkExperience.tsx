@@ -114,7 +114,7 @@ const WorkExperience: React.FC = () => {
           </motion.article>
 
 
-                    {/* Junior Graphic Designer */}
+                    {/* Junior Graphic Designer & IT Support */}
           <motion.article
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -135,7 +135,7 @@ const WorkExperience: React.FC = () => {
 
               <div className="flex items-center mt-4 md:mt-0 text-muted-foreground">
                 <Calendar size={14} className="mr-2" />
-                <span className="text-sm">Graphic Design</span>
+                <span className="text-sm">Graphic Design & IT Support</span>
               </div>
             </header>
 
@@ -147,15 +147,15 @@ const WorkExperience: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Collaborated with the marketing team to develop branding strategies.</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={16} className="text-primary mr-3 mt-1" />
                   <span>Utilized design software such as Adobe Photoshop and Illustrator to produce high-quality graphics.</span>
                 </li>
                 <li className="flex items-start">
                   <Check size={16} className="text-primary mr-3 mt-1" />
-                  <span>Ensured consistency in design across all marketing channels.</span>
+                  <span>Provided IT support by troubleshooting hardware and software issues for store operations.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={16} className="text-primary mr-3 mt-1" />
+                  <span>Assisted in maintaining the store's computer systems and ensuring smooth daily operations.</span>
                 </li>
               </ul>
             </div>
