@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Education from '../components/Education';
 import WorkExperience from '../components/WorkExperience';
+import Certifications from '../components/Certifications';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
@@ -16,6 +17,7 @@ export default function Home() {
         <Banner />
         <Education />
         <WorkExperience />
+        <Certifications />
         <Skills />
         <Projects />
         <Contact />
