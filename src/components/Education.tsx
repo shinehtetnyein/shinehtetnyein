@@ -5,7 +5,7 @@ import { GraduationCap, Calendar } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor of Computing",
+      degree: "Bachelor of Science in Computing (First Class Honours)",
       institution: "Greenwich University - UK",
       period: "2024 - 2025",
       description: "Focused on core areas of computing including software development, databases, web technologies, and system analysis.",
